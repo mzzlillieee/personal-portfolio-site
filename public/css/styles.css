@@ -1,0 +1,112 @@
+header{
+  margin-top: 2%;
+}
+
+header::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+body{
+  margin: 0;
+  background: #2f2f2f;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  color: #cacaca;
+  font-weight: 200;
+}
+
+.logo{
+  float: left;
+  width: 75px;
+  height: 75px;
+  padding: 10px 0;
+}
+
+nav{
+  margin: 1%;
+  float: right;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li{
+  display: inline-block;
+  margin: 20px 0  0 40px;
+
+  position: relative;
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+  text-transform: lowercase;
+  font-size: 1.2em;
+}
+
+nav a::before{
+  content: '';
+  height: 5px;
+  display: block;
+  background-color: yellow;
+  position: absolute;
+  top: 30px;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover{
+  color: yellow;
+
+}
+
+nav a:hover::before{
+  width: 100%;
+}
+
+section a{
+  color: white;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+section a:hover{
+  color: yellow;
+}
+
+section a:hover::before{
+  width: 100%;
+}
+
+a.focus{
+  color: yellow;
+}
+
+h2 {
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-size: 2.5em;
+}
+
+p {
+text-align: center;
+font-size: 1.1em;
+line-height: 1.6em;
+}
+
+.nav-container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+#page-content{
+  margin: 10% 15% 0 15%;
+}
+

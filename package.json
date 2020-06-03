@@ -1,0 +1,23 @@
+{
+  "name": "lillysportfoliosite",
+  "version": "1.0.0",
+  "description": "personal site",
+  "main": "app.js",
+  "scripts": {
+    "test": "node index.js",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mzzlillieee/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mzzlillieee/portfolio/issues"
+  },
+  "homepage": "https://github.com/mzzlillieee/portfolio#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

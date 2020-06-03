@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<html>
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Lilly Tang</title>
+  <link href="../css/styles.css" rel="stylesheet" type="text/css">
+  <link href="../css/works.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header>
+    <div class='nav-container'>
+      <a href="/"> <img class='logo' src="../assets/logo.png" alt="Lilly's Portfolio"></a>
+      <nav>
+        <ul>
+          <li><a href="/">about</a></li>
+          <li><a class='focus' href="#">projects</a></li>
+          <li><a href="/pages/drawings.html">drawings</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+  <section id='work-content'>
+    <div class='work-container-wrapper'>
+      <div class='work-container'>
+        <img id="myBtnOne" class='image-tile' src="../assets/dark_portfolio.png" alt="Lilly's Portfolio">
+      </div>
+      <div class='work-container'>
+        <img id="myBtnTwo" class='image-tile' src="../assets/avocado-toast.png" alt="Lilly's Portfolio">
+      </div>
+      <div class='work-container'>
+        <img id="myBtnThree" class='image-tile' src="../assets/web_scraper.png" alt="Lilly's Portfolio">
+      </div>
+    </div>
+    <div class='work-container-wrapper'>
+      <div class='work-container'>
+        <img id="myBtnFour" class='image-tile' src="../assets/carousel.png" alt="Lilly's Portfolio">
+      </div>
+      <div class='work-container'>
+        <img id="myBtnFive" class='image-tile' src="../assets/airbnb.png" alt="Lilly's Portfolio">
+      </div>
+      <div class='work-container'>
+        <img id="myBtnSix" class='image-tile' src="../assets/umbrella.png" alt="Lilly's Portfolio">
+      </div>
+    </div>
+    <div id="myModalOne" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>lillytang.me</h2>
+        <img class='image-modal' src="../assets/portfolio.png" alt="Lilly's Portfolio">
+        <p>lillytang.me is a porfolio site for sharing web development projects and art illustrations.</p>
+        <p>Tech: JS, HTML, CSS</p>
+      </div>
+    </div>
+
+    <div id="myModalTwo" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Avocado Toast</h2>
+
+        <p align="center"></p>
+        <p>Avocado Toast is a mobile app that builds positive spending habits.</p>
+        <p>Tech: React, Ionic, Typescript, SCSS, Mobx, Ionic, Capacitor, SQLite Database</p>
+      </div>
+    </div>
+
+    <div id="myModalThree" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Web Scraper to Check Immigration Status</h2>
+        <img class='image-modal' src="../assets/web_scraper.png" alt='web-scraper'>
+        <p align="center"></p>
+        <p>This program estimates USCIS application and petition processing time. </p>
+        <p>Checking manually at
+          https://egov.uscis.gov/casestatus/mycasestatus.do is a slow and tiring process. Instead, I wrote a program
+          to check and scrap the USCIS gov website for 40,000 or so cases before and after my own receipt number,
+          and then it'd spit out all the records into a well-organized CSV for further analysis.
+        </p>
+        <p>Tech: JS, Node, Express, Cron</p>
+        <p align="center"><a href='https://github.com/mzzlillieee/Web-Scraper-to-Check-Immigration-Status'>Github</a>
+        </p>
+      </div>
+    </div>
+
+    <div id="myModalFour" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Yelp Carousel Microservice</h2>
+        <img class='image-modal' src="../assets/carousel.png" alt='web-scraper'>
+        <p align="center"></p>
+        <p>A carousel microservice mimics the interface used for Yelp's Popular Dishes.</p>
+        <p>
+          I implemented a responsive carousel module in React to manage UI rendering logic for service-oriented
+          architecture application. Designed
+          an Express proxy server deployed on AWS to route requests between application microservices.</p>
+
+        </p>
+        <p>Tech: React, HTML, CSS, JS, Node, Express, Jest, Docker, AWS EC2, PostGres Database</p>
+        <p align="center"><a href='https://github.com/mzzlillieee/popular-dishes-carousel-service'>Github</a>
+        </p>
+
+      </div>
+    </div>
+
+    <div id="myModalFive" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Airbnb Photo Backend API</h2>
+        <img class='image-modal' src="../assets/airbnb.png" alt='proxy-server'>
+        <p align="center"></p>
+        <p>A photo gallery microservice mimics the interface used for Airbnb's listing</p>
+        <p>Implemented a RESTful API in Express.js and Node.js using a PostgreSQL database to efficiently store and
+          query 50M+ images. Deployed five EC2 micro instances behind a NGINX Load Balancer to sustain 1500 RPS, a 300%
+          increase in speed.
+        </p>
+        <p>Tech: React, Node, Express, AWS EC2, NGINX, PostGres Database
+        </p>
+        <p align="center"><a href='https://github.com/mzzlillieee/photo-gallery-service'>Github</a>
+        </p>
+      </div>
+    </div>
+
+    <div id="myModalSix" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Umbrella Reminder via Text Messages</h2>
+        <img class='image-modal' src="../assets/umbrella2.png" alt='web-scraper'>
+        <p>UMBRELLA is an app that reminds users to bring an umbrella via text. Implemented an automated cron module to
+          fetch weather data from OpenWeatherMap API</p>
+        <p>Send reminder texts to users via Twilio SMS API based on the forecasted weather of the day</p>
+        <p>Tech: React, Node, Express, Cron, Twilio SMS API, OpenWeatherMap </p>
+      </div>
+    </div>
+
+  </section>
+  <script src="../app.js">
+  </script>
+</body>
+
+</html>
